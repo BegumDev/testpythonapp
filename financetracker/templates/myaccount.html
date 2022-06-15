@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>This is the my account page</h1>
+
+    {% for i in info %}
+
+    <h2>Hello {{ i.full_name }}</h2>
+
+    {% endfor %}
+
+{% endblock %}

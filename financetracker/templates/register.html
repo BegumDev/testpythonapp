@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+<h1>This is the register page</h1>
+
+{% block content %}
+
+<form class="col s12" method="POST" action="{{ url_for('register') }}">
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="full_name" name="full_name" type="text" class="validate" required>
+            <label for="full_name">Full Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="age" name="age" type="text" class="materialize-textarea validate" required>
+            <label for="age">Age</label>
+        </div>
+    </div>
+    <button type="submit" class="btn-large light-blue darken-1">Register</button>
+</form>
+
+{% endblock %}
