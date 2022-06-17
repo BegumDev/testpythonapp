@@ -6,5 +6,7 @@ class Customer(db.Model):
     full_name = db.Column(db.String(50))
     age = db.Column(db.Integer, nullable=False)
 
-    def __repr__(self):
-        self.id, self.full_name, self.age
+    def __repr__(self, full_name, age):
+        self.id = id
+        self.full_name = full_name
+        self.age = age
